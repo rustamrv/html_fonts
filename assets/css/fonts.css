@@ -1,0 +1,48 @@
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/pts55f-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/pts56f-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/pts75f-webfont.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "farrolight";
+  src: url("../fonts/farro-light-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "francois_one";
+  src: url("../fonts/francoisone-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "staatlichesregular";
+  src: url("../fonts/staatliches-regular-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "tourneysemibold";
+  src: url("../fonts/tourney-semibold-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}

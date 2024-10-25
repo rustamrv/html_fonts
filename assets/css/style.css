@@ -1,0 +1,75 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "PT Sans", sans-serif;
+  align-items: center;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+
+  margin-left: auto;
+  margin-right: auto;
+  width: min(90%, 1200px);
+}
+
+header h2 {
+  font-family: "staatlichesregular";
+  margin-right: 50px;
+  font-weight: 400;
+}
+
+.container {
+  width: min(90%, 1200px);
+  margin-inline: auto;
+}
+
+section {
+  margin-top: 70px;
+}
+
+.container h2 {
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  font-family: "francois_one";
+  font-weight: 400;
+  letter-spacing: 1.44px;
+}
+
+
+
+.container p {
+  margin-bottom: 40px;
+  font-family: "PT Sans";
+  line-height: 48px;
+  font-size: 28px;
+}
+
+.code {
+  background-color: rgb(179, 174, 174);
+}
+
+.italic {
+  font-style: italic;
+}
+
+.under {
+  text-decoration: underline;
+}
+
+main {
+  counter-reset: chapter-count 0;
+}
+
+section h2::after {
+  counter-increment: chapter-count;
+  content: "Chapter " counter(chapter-count);
+  font-size: 12px;
+  color: black;
+  font-family: "farrolight";
+  margin-left: 10px;
+  vertical-align: super;
+  text-transform: capitalize;
+}
