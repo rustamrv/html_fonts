@@ -3,31 +3,88 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "PT Sans", sans-serif;
-  align-items: center;
 }
 
 .header {
   display: grid;
   grid-template-columns: auto 1fr auto;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-left: auto;
+  margin-right: auto;
+  width: min(90%, 1200px);
 
+  z-index: 9999;
+}
+
+.header a {
+  text-decoration: none;
+  font-family: "staatlichesregular";
+  font-weight: 400;
+}
+
+.header .tourney {
+  font-family: "tourneysemibold";
+}
+
+.header h2 {
+  margin-right: 50px;
+}
+
+.sidebar {
+  position: sticky;
+  top: 0;
+  width: 385px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #000;
+  font-family: "francois_one";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.sidebar hr {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  margin-top: 10px;
+}
+.sidebar ul li {
+  margin-bottom: 70px;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+.documentation {
+  background-image: url("../images/bg-picture.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-position-y: 180px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 385px 1fr;
+  gap: 10px;
+  padding-top: 180px;
+  left: 50%;
   margin-left: auto;
   margin-right: auto;
   width: min(90%, 1200px);
 }
 
-header h2 {
-  font-family: "staatlichesregular";
-  margin-right: 50px;
-  font-weight: 400;
-}
-
 .container {
   width: min(90%, 1200px);
   margin-inline: auto;
-}
-
-section {
-  margin-top: 70px;
 }
 
 .container h2 {
@@ -36,19 +93,47 @@ section {
   font-family: "francois_one";
   font-weight: 400;
   letter-spacing: 1.44px;
+  font-size: 36px;
+  font-style: normal;
 }
 
+section .container h2::before {
+  content: "";
+  display: block;
+  width: 100px;
 
+  height: 8px;
+  background-color: #000000;
+  margin-top: 5px;
+}
+
+.using .container h2 {
+  display: inline-block;
+  position: relative;
+  padding-left: 120px;
+}
+
+.using .container h2::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 100px;
+  height: 8px;
+  background-color: #000000;
+}
 
 .container p {
   margin-bottom: 40px;
-  font-family: "PT Sans";
-  line-height: 48px;
-  font-size: 28px;
+  line-height: 1.6;
+  font-size: 18px;
 }
 
 .code {
   background-color: rgb(179, 174, 174);
+  padding: 2px 4px;
+  border-radius: 4px;
 }
 
 .italic {
@@ -72,4 +157,34 @@ section h2::after {
   margin-left: 10px;
   vertical-align: super;
   text-transform: capitalize;
+}
+
+.using .container h2 {
+  text-transform: capitalize;
+}
+
+.icons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.item {
+  border-radius: 8px;
+  background: #e6e6e6;
+  display: flex;
+  width: 270px;
+  height: 180px;
+  padding: 50px 30px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.black {
+  background: #1a1a1a;
+}
+
+.icons .item:hover {
+  filter: invert(1);
 }

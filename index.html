@@ -1,28 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./assets/css/fonts.css" />
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Documentation</title>
+    <link rel="stylesheet" href="./assets/css/fonts.css" >
 
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" >
   </head>
   <body>
     <header class="header">
-      <h2 class="header-item">ENG</h2>
-      <h2 class="header-item">Documentation / Who's using</h2>
+      <h2 class="tourney">ENG</h2>
+      <h2>
+        <a href="index.html">Documentation</a> /
+        <a href="using/index.html"> Who's using</a>
+      </h2>
 
       <img
         class="header-logo"
         src="./assets/images/company-logo-black.png"
         alt="Company Logo"
-      />
+      >
     </header>
 
-    <main>
+    <main class="documentation">
+      <aside class="sidebar">
+        <ul>
+          <li>
+            <a href="#introduction">Introduction</a>
+            <hr />
+          </li>
+
+          <li>
+            <a href="#core-components">Core Components</a>
+            <hr />
+          </li>
+
+          <li>
+            <a href="#react-fundamentals">React Fundamentals</a>
+            <hr />
+          </li>
+
+          <li>
+            <a href="#text-input">Handling Text Input</a>
+            <hr />
+          </li>
+        </ul>
+      </aside>
       <section>
-        <div class="container">
+        <div class="container" id="introduction">
           <h2>Introduction</h2>
           <p>
             Welcome to the very start of your React Native journey! If you're
@@ -32,9 +58,7 @@
             and more!
           </p>
         </div>
-      </section>
-      <section>
-        <div class="container">
+        <div class="container" id="core-components">
           <h2>core components</h2>
           <p>
             React Native is an open source framework for building Android and
@@ -47,9 +71,8 @@
             cover how components work in React Native.
           </p>
         </div>
-      </section>
-      <section>
-        <div class="container">
+
+        <div class="container" id="react-fundamentals">
           <h2>react fundamentals</h2>
           <p>
             React Native runs on React, a popular open source library for
@@ -87,9 +110,7 @@
             gives your components memory!
           </p>
         </div>
-      </section>
-      <section>
-        <div class="container">
+        <div class="container" id="text-input">
           <h2>handling text input</h2>
           <p>
             TextInput is a Core Component that allows the user to enter text. It
