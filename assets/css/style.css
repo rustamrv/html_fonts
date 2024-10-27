@@ -179,12 +179,18 @@ section h2::after {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition: transform 1.5s ease;
+}
+
+.item img {
+  transition: filter 1.5s ease;
 }
 
 .black {
   background: #1a1a1a;
 }
 
-.icons .item:hover {
+.item:hover {
+  transform: rotateY(360deg);
   filter: invert(1);
 }
